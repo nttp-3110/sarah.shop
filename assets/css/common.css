@@ -18,11 +18,11 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   outline: 0;
-  font-size: 100%;
+  font-size: 1rem;
 }
 
 html {
-  font-size: 100%;
+  font-size: 62.5%;
 }
 
 body, table,
@@ -183,17 +183,6 @@ img {
 /*------------------------------------------------------------
 	header
 ------------------------------------------------------------*/
-#header {
-  background-color: #ffc600;
-  min-height: 30px;
-}
-
-#header h1 {
-  padding: 10px 0;
-  font-size: 0.75rem;
-  font-weight: normal;
-}
-
 .h_write {
   min-width: 260px;
   float: right;
@@ -203,7 +192,7 @@ img {
   padding-right: 20px;
   color: #00559d;
   font-family: "Meiryo", sans-serif;
-  font-size: 1rem;
+  font-size: 1.6rem;
 }
 
 .h_write img {
@@ -235,7 +224,7 @@ img {
 	Content
 ------------------------------------------------------------*/
 .section_inner span {
-  font-size: 1.875rem;
+  font-size: 3rem;
   color: #b52622;
   margin-bottom: 40px;
   font-weight: normal;
@@ -263,7 +252,7 @@ img {
 .breadcrumb {
   width: 100%;
   overflow: hidden;
-  padding: 1.25rem 0;
+  padding: 20px 0;
 }
 
 .breadcrumb .breadcrumb_item {
@@ -280,11 +269,11 @@ img {
   content: "\f105";
   color: #000;
   padding-left: 5px;
-  font-size: 0.75rem;
+  font-size: 1.2rem;
 }
 
 .breadcrumb .breadcrumb_item a {
-  font-size: 0.75rem;
+  font-size: 1.2rem;
   cursor: pointer;
   color: #006699;
 }
@@ -298,7 +287,7 @@ img {
   font-family: 'FontAwesome';
   content: "\f105";
   color: #333;
-  font-size: 0.75rem;
+  font-size: 1.2rem;
 }
 
 .breadcrumb .active::after {
@@ -311,29 +300,37 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+  .breadcrumb {
+    padding: 10px 0;
+  }
   .breadcrumb .breadcrumb_item a {
-    font-size: 1.375rem;
+    font-size: 1.1rem;
   }
   .breadcrumb .breadcrumb_item:before {
-    font-size: 1.375rem;
+    font-size: 1.1rem;
   }
   .breadcrumb .active:before {
-    font-size: 1.375rem;
+    font-size: 1.1rem;
   }
 }
 
 /*---------element img-------*/
 .element {
-  width: 50%;
+  width: 450px;
   float: left;
-  margin-top: 40px;
   color: #333;
-  padding: 2.5rem 0;
+  padding: 40px 0;
+  padding-right: 20px;
+}
+
+.element .e_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .element .e_main .e_img {
   float: left;
-  width: 40%;
 }
 
 .element .e_main .e_img .e_img_mb {
@@ -341,23 +338,24 @@ img {
 }
 
 .element .e_main .e_info {
-  width: 60%;
+  width: 61%;
   padding: 40px 0 0 40px;
   float: right;
 }
 
 .element .e_main .e_info p {
-  font-size: 0.75rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+  font-family: Kozuka Gothic Pr6N;
 }
 
 .element .e_main .e_info p span {
-  font-weight: bold;
-  font-size: 1.5rem;
-  margin-right: 15px;
+  font-size: 1.2rem;
+  padding-left: 15px;
+  font-weight: normal;
 }
 
 .element .e_main .e_info dl {
-  font-size: 0.875rem;
   margin-top: 40px;
   font-weight: bold;
 }
@@ -365,12 +363,20 @@ img {
 .element .e_main .e_info dl dt {
   float: left;
   padding-right: 20px;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
 }
 
 .element .e_main .e_info dl dd {
-  border-left: 1px solid #b92d26;
+  border-left: 2px solid #b92d26;
   padding-left: 20px;
   margin-left: 75px;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+}
+
+.element .e_main .e_info dl dd p {
+  font-size: 1.4rem;
 }
 
 .element .e_profile {
@@ -378,7 +384,6 @@ img {
 }
 
 .element .e_profile dl {
-  font-size: 0.875rem;
   margin-top: 40px;
 }
 
@@ -386,12 +391,25 @@ img {
   float: left;
   padding-right: 20px;
   font-weight: bold;
+  font-size: 1.4rem;
 }
 
 .element .e_profile dl dd {
-  border-left: 1px solid #b92d26;
+  border-left: 2px solid #b92d26;
   padding-left: 20px;
   margin-left: 75px;
+  font-size: 1.4rem;
+}
+
+.element .e_profile dl dd p {
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+}
+
+.element .e_profile dl dd li {
+  font-size: 1.4rem;
+  list-style: none;
+  line-height: 2.6rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -399,16 +417,19 @@ img {
     width: 100%;
     float: left;
     margin: 30px 0;
-    padding-bottom: 2.5rem;
+    padding-bottom: 40px;
   }
   .element:nth-child(2n) {
     width: 100% !important;
-    padding-left: pc_to_em(40px) !important;
+    padding-left: 20px;
+  }
+  .element .e_main {
+    display: block;
   }
   .element .e_main .e_img {
     float: left;
     width: 100%;
-    padding-top: 2.5rem;
+    padding-top: 40px;
   }
   .element .e_main .e_img .e_img_pc {
     display: none;
@@ -424,16 +445,16 @@ img {
     float: right;
   }
   .element .e_main .e_info p {
-    font-size: 1.375rem;
+    font-size: 1.1rem;
   }
   .element .e_main .e_info p span {
     font-weight: bold;
-    font-size: 2.125rem;
+    font-size: 1.7rem;
     margin-right: 15px;
     font-family: "HiraKakuPro";
   }
   .element .e_main .e_info dl {
-    font-size: 1.375rem;
+    font-size: 1.1rem;
     margin-top: 40px;
     font-weight: bold;
     font-family: "HiraKakuPro";
@@ -441,9 +462,7 @@ img {
   .element .e_main .e_info dl dt {
     float: left;
     padding-right: 20px;
-  }
-  .element .e_main .e_info dl dd {
-    margin-left: 110px;
+    min-width: 10%;
   }
   .element .e_main .e_info dl dd br {
     display: none;
@@ -452,16 +471,14 @@ img {
     clear: both;
   }
   .element .e_profile dl {
-    font-size: 1.375rem;
+    font-size: 1.1rem;
     margin-top: 40px;
     font-family: "HiraKakuPro";
   }
   .element .e_profile dl dt {
     float: left;
     padding-right: 20px;
-  }
-  .element .e_profile dl dd {
-    margin-left: 110px;
+    min-width: 10%;
   }
 }
 
@@ -477,7 +494,7 @@ img {
 }
 
 .service .s_icon {
-  margin: 1.875rem 4.375rem 0 0;
+  margin: 30px 70px 0 0;
 }
 
 .service .s_icon img {
@@ -504,17 +521,17 @@ img {
 }
 
 .service .s_content .text__head .s_title span {
-  font-size: 1rem;
+  font-size: 1.6rem;
   color: #fff;
 }
 
 .service .s_content .text__head .s_title i {
   color: #fff;
-  font-size: 1.25rem;
+  font-size: 2rem;
 }
 
 .service .s_content .s_text {
-  font-size: 1rem;
+  font-size: 1.6rem;
   margin: 10px 0 20px 0;
 }
 
@@ -525,8 +542,8 @@ img {
 .service .s_content .s_end ul li a {
   text-decoration: none;
   color: #114170;
-  padding-right: 0.9375rem;
-  font-size: 0.875rem;
+  padding-right: 15px;
+  font-size: 1.4rem;
 }
 
 .service .s_content .s_end ul li a:before {
@@ -538,12 +555,15 @@ img {
 
 @media screen and (max-width: 768px) {
   .service {
-    padding: 2.5rem;
+    padding: 20px;
     width: 100%;
     overflow: hidden;
   }
   .service .s_icon {
     display: none;
+  }
+  .service .s_icon img {
+    width: 100%;
   }
   .service .s_content {
     width: 100%;
@@ -557,37 +577,37 @@ img {
   }
   .service .s_content .text__head .s_icon {
     display: block;
-    margin: 0 1.25rem 0 0;
+    margin: 0 2% 0 0;
   }
   .service .s_content .text__head .s_title {
-    padding: 0.625rem 1.5625rem 0 1.25rem;
+    padding: 10px 25px 0 20px;
     background: #b92d26;
     width: 100%;
     position: relative;
   }
   .service .s_content .text__head .s_title span {
-    font-size: 1.625rem;
+    font-size: 1.3rem;
     color: #fff;
     font-weight: bold;
     position: absolute;
-    top: 50%;
-    margin-top: -1.875rem;
-    padding-right: 1.875rem;
+    top: 32%;
+    margin-top: 0px;
+    padding-right: 12px;
   }
   .service .s_content .text__head .s_title i {
     color: #fff;
-    font-size: 1.875rem;
+    font-size: 1.5rem;
     font-weight: bold;
     position: absolute;
-    top: 3.75rem;
-    right: 0.9375rem;
+    top: 20px;
+    right: 10px;
   }
   .service .s_content .text__head .s_title br {
     display: block;
   }
   .service .s_content .s_text {
-    font-size: 1.375rem;
-    padding: 20px 0 35px 0;
+    font-size: 1.1rem;
+    padding: 10px 0 20px 0;
     margin: 0;
     clear: both;
     font-family: "HiraKakuPro", sans-serif;
@@ -598,8 +618,9 @@ img {
   .service .s_content .s_end ul li a {
     text-decoration: none;
     color: #114170;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-family: "HiraKakuPro", sans-serif;
+    font-weight: bold;
   }
   .service .s_content .s_end ul li a:before {
     font-family: 'FontAwesome';
@@ -618,8 +639,9 @@ img {
 ------------------------------------------------------------*/
 body {
   min-width: 1280px;
+  /* ウインドウ幅で横スクロール時に背景が切れるバグ対策でコンテンツと同じ幅を指定 */
   line-height: 1.5;
-  font-family: "游ゴシック", "YuGothic", "メイリオ", "Meiryo", "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", sans-serif;
+  font-family: "Meiryo", sans-serif;
   -webkit-text-size-adjust: 100%;
   font-size: 100%;
 }
@@ -676,14 +698,14 @@ img {
 }
 
 .l_header .h_top span {
-  font-size: 0.75rem;
+  font-size: 1.2rem;
 }
 
 .l_header .h_top ul li {
   float: right;
   border-left: 1px solid #ddd;
-  padding: 0 1.25rem;
-  font-size: 0.75rem;
+  padding: 0 20px;
+  font-size: 1.2rem;
 }
 
 .l_header .h_top ul li:first-child {
@@ -691,7 +713,7 @@ img {
 }
 
 .l_header .h_mid .h_logo {
-  width: 34.375rem;
+  width: 550px;
 }
 
 .l_header .h_mid .h_logo img {
@@ -704,7 +726,7 @@ img {
 }
 
 .l_header .h_mid .h_info {
-  min-width: 43.75rem;
+  min-width: 700px;
   float: right;
 }
 
@@ -735,7 +757,7 @@ hr {
 
 .l_nav .bg_nav img {
   width: 100%;
-  height: 13.75rem;
+  height: 220px;
 }
 
 .l_nav .bg_nav #img_mobile {
@@ -776,7 +798,7 @@ hr {
 }
 
 .l_nav nav .dropdown_content li a {
-  font-size: 1.25rem;
+  font-size: 2rem;
   color: #fff;
   text-decoration: none;
   display: block;
@@ -822,18 +844,18 @@ hr {
 }
 
 .l_footer .information .info {
-  font-size: 1.125rem;
+  font-size: 1.8rem;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
 
 .l_footer .information .content_top {
-  font-size: 1.25rem;
-  margin-bottom: 40px;
+  font-size: 3rem;
+  margin-bottom: 20px;
 }
 
 .l_footer .information .content_mid {
-  font-size: 1.375rem;
+  font-size: 2.2rem;
   font-weight: bold;
 }
 
@@ -842,7 +864,7 @@ hr {
 }
 
 .l_footer .information .phone {
-  font-size: 3.75rem;
+  font-size: 6rem;
   color: #b92d26;
 }
 
@@ -851,7 +873,7 @@ hr {
 }
 
 .l_footer .information .small {
-  font-size: 0.875rem;
+  font-size: 1.4rem;
 }
 
 .l_footer .information .line {
@@ -862,6 +884,7 @@ hr {
 
 .l_footer .information .line .h_write {
   margin: 40px auto 0 auto;
+  font-weight: bold;
 }
 
 .l_footer #menu_ft {
@@ -871,33 +894,35 @@ hr {
 }
 
 .l_footer #menu_ft .row {
-  padding: 80px 0;
+  padding: 50px 0 40px 0;
 }
 
 .l_footer #menu_ft .row ul li {
-  margin-bottom: 40px;
-  line-height: 25px;
+  margin-bottom: 20px;
+  line-height: 2.5rem;
   font-weight: bold;
 }
 
 .l_footer #menu_ft .row ul li a {
   color: #000;
   text-decoration: none;
-  font-size: 0.875rem;
+  font-size: 1.4rem;
 }
 
 .l_footer #menu_ft .row ul li::before {
-  font-family: 'FontAwesome';
-  content: "\f138 ";
-  color: #b92d26;
-  font-size: 1.25rem;
-  margin-right: 5px;
+  content: url(../img/icon_menu.png);
+  vertical-align: -8px;
+  padding-right: 5px;
 }
 
 .l_footer #menu_ft .row ul li ul li {
-  margin-top: 10px;
-  margin-left: 30px;
+  margin-left: 25px;
+  margin-bottom: 0;
   font-weight: normal;
+}
+
+.l_footer #menu_ft .row ul li ul li a {
+  font-size: 1.2rem;
 }
 
 .l_footer #menu_ft .row ul li ul li::before {
@@ -906,7 +931,7 @@ hr {
   color: #b92d26;
   vertical-align: middle;
   margin-right: 5px;
-  font-size: 0.75rem;
+  font-size: 1.2rem;
 }
 
 .l_footer #menu_fb_mb {
@@ -915,6 +940,7 @@ hr {
 
 .l_footer #copy_right {
   background: #b92d26;
+  padding: 5px 0;
 }
 
 .l_footer #copy_right img {
@@ -926,7 +952,7 @@ hr {
   text-align: center;
   padding: 30px 0;
   color: #fff;
-  font-size: 0.75rem;
+  font-size: 1.2rem;
   font-weight: bold;
   font-family: "Meiryo", sans-serif;
 }
