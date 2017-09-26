@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title></title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="assets/css/common.css" rel="stylesheet">
+<link href="assets/css/index.css" rel="stylesheet">
+</head>
+	<body>
+		
+		<button onclick="topFunctionMB()" class="btnBack" title="Go to top" id="btt_mb"><img src="assets/img/icon_backToTop_mb.png"/></button>
+		<button onclick="topFunctionPC()" class="btnBack" title="Go to top" id="btt_pc"><img src="assets/img/icon_backToTop_PC.png"/></button>
+		<div class="container-fluid">
+				<!-- header -->
+				<header>
+					<div class="l_header">
+    <div class="container">
+        <div class="h_top">
+            <div class="row">
+                <div class="col text_left">
+                    <span id="fs">テキストが入ります。テキストが入ります。</span>
+                </div>
+                <div class="col text_right">
+                    <ul>
+                        <li>経験者採用</li>
+                        <li>会社概要</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <div class="container">
+        <div class="h_mid">
+            <div class="row">
+                <div class="h_logo">
+                    <img src="assets/img/logo.png" width="445" height="70" alt="" id="logo_pc" class="mb pc">
+                    <img src="assets/img/logo-res.jpg" width="500" height="95" alt="" id="logo_mb" class="mb pc">        
+                   
+                </div>
+                <div class="h_info">
+                    <img src="assets/img/info.png" width="415" height="50" alt="" class="pc">
+                    <div class="h_write">
+    <img src="assets/img/icon_write.png" height="30" width="30" alt="">
+    Webからのお問い合わせ <i class="fa fa-angle-right" aria-hidden="true"></i>
+</div>
+                    <button  onclick="dropdownMenu()" id="btndropdown" class="btndropdown mb">
+                        <img src="assets/img/btndropdown.png" width="95" height="95" alt="">
+                        <!-- ☰ -->
+                    </button>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+
+				</header>
+				<div class="clearfix"></div>
+				<!-- /header -->
+				<!-- content -->
+				<div id="c-content">
+					
+<div class="l_nav">
+   
+    <nav>
+        <ul class="dropdown_content" id="menuDropdown">
+            <div class="container">
+                <li><a href="index.html" >HOME</a></li>
+                <li><a href="service.html">サービス紹介 </a></li>
+                <li><a href="index.html" >実績・事例紹介 </a></li>
+                <li><a href="character.html">組織・人事コンサルティングの特徴 </a></li>
+                <li><a href="consult.html">注目のテーマ</a></li>
+                <li><a href="profile.html">資料ダウンロード</a></li>
+            </div>
+        </ul>
+    </nav>
+    <div class="bg_nav">
+        <img src="assets/img/banner_profile.png" width="1920" height="220" alt="" id="img_pc">
+        <img src="assets/img/banner_profile_mb.png" width="640" height="238" alt="" id="img_mobile">
+    </div>
+</div>
+<div class="clearfix"></div>
+<div class="l_content">
+    <div id="page">
+        <div class="l_beadcrumb">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb_item"><a onclick="loadPageWorksHome()">HOME </a></li>
+                    <li class="breadcrumb_item active"><a onclick="loadPageWorksHome()"> 会社概要 </a></li>
+                    
+                </ol>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="p_content_05">
+            <div class="wrapper">
+                <div class="title_profile">
+                        私たちは中小企業経営力強化支援法に基づく「経営革新等支援機関」に認定されています。<br/>
+                        全国の大都市とアジアマーケットの核となる地域に拠点をもつ経営コンサルティングのプロ集団です。
+                </div>
+                <div class="contact">
+    <div class="row_contact">
+        <div class="row_left">
+            社名
+        </div>
+        <div class="row_right">
+            山田ビジネスコンサルティング株式会社
+        </div>
+    </div>
+    <div class="row_contact">
+        <div class="row_left">
+            創業
+        </div>
+        <div class="row_right">
+            2000年7月
+        </div>
+    </div>
+    <div class="row_contact">
+        <div class="row_left">
+            代表者
+        </div>
+        <div class="row_right">
+            <ul>
+                <li>代表取締役会長　山田　淳一郎(会計士・税理士)</li>
+                <li>代表取締役社長　増田　慶作(税理士・司法書士)</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row_contact">
+        <div class="row_left">
+            資本金
+        </div>
+        <div class="row_right">
+                1億円
+        </div>
+    </div>
+    <div class="row_contact">
+        <div class="row_left">
+            株主
+        </div>
+        <div class="row_right">
+            <ul>
+                <li>山田コンサルティンググループ株式会社（100％）</li>
+                <li>JASDAQ上場4792</li>
+                <li>資本金15億9,953万円</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row_contact">
+        <div class="row_left">
+            株主
+        </div>
+        <div class="row_right">
+            <ul>
+                <li>山田コンサルティンググループ株式会社（100％）</li>
+                <li>JASDAQ上場4792</li>
+                <li>資本金15億9,953万円</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row_contact">
+        <div class="row_left">
+            事業内容
+        </div>
+        <div class="row_right">
+            <ul>
+                <li>1-M&Aコンサルティング</li>
+                <li>2-事業承継コンサルティング</li>
+                <li>3-海外事業コンサルティング</li>
+                <li>4-医療機関向けコンサルティング</li>
+                <li>5-事業再生コンサルティング</li>
+                <li>6-持続的成長コンサルティング</li>
+                <li>7-人事コンサルティング</li>
+                <li>8-グループ会社組織再編、その他諸問題の解決</li>
+            </ul>
+        </div>
+    </div>
+</div>
+                <div class="clearfix"></div>
+<div class="profile_info">
+    <p class="title">国内拠点</p>
+    <div class="info">
+        <span>東京本社</span>
+        <table>
+            <tr>
+                <th>所在地</th>
+                <td>東京都千代田区丸の内1丁目8番1号 <br/>丸の内トラストタワーN館10階(受付9階)</td>
+            </tr>
+            <tr>
+                <th>TEL</th>
+                <td>03-6212-2510(代表)</td>
+            </tr>
+            <tr>
+                <th>FAX</th>
+                <td>03-6212-2520</td>
+            </tr>
+            <tr>
+                <th>アクセス</th>
+                <td>JR東京駅日本橋口より 徒歩1分</td>
+            </tr>
+
+        </table>
+    </div>
+    <div class="info">
+        <span>京都支店</span>
+        <table>
+            <tr>
+                <th>所在地</th>
+                <td>京都府京都市下京区四条通烏丸東入長刀鉾町<br/> 20番地四条烏丸FTスクエア9階</td>
+            </tr>
+            <tr>
+                <th>TEL</th>
+                <td>075-253-1323(代表)</td>
+            </tr>
+            <tr>
+                <th>FAX</th>
+                <td>075-253-1324</td>
+            </tr>
+            <tr>
+                <th>アクセス</th>
+                <td>地下鉄烏丸線「四条」駅・阪急京都線 <br/>「烏丸」駅19番出口直結</td>
+            </tr>
+
+        </table>
+    </div>
+    <div class="info">
+        <span>大阪支店</span>
+        <table>
+            <tr>
+                <th>所在地</th>
+                <td>大阪府大阪市中央区伏見町4丁目1番1号 <br/>明治安田生命大阪御堂筋ビル(L.A.タワー)12階</td>
+            </tr>
+            <tr>
+                <th>TEL</th>
+                <td>06-6202-1260(代表)</td>
+            </tr>
+            <tr>
+                <th>FAX</th>
+                <td>06-6202-1261</td>
+            </tr>
+            <tr>
+                <th>アクセス</th>
+                <td>地下鉄御堂筋線「淀屋橋」駅13番出口より 徒歩0分</td>
+            </tr>
+
+        </table>
+    </div>
+    <div class="info">
+        <span>神戸事業所</span>
+        <table>
+            <tr>
+                <th>所在地</th>
+                <td>兵庫県神戸市中央区磯上通8丁目3番5号 <br>明治安田生命神戸ビル11階(受付6階)</td>
+            </tr>
+            <tr>
+                <th>TEL</th>
+                <td>075-253-1323(代表)</td>
+            </tr>
+            <tr>
+                <th>FAX</th>
+                <td>075-253-1324</td>
+            </tr>
+            <tr>
+                <th>アクセス</th>
+                <td>地下鉄烏丸線「四条」駅・阪急京都線 <br/>「烏丸」駅19番出口直結</td>
+            </tr>
+
+        </table>
+    </div>
+    <div class="info">
+        <span>名古屋支店</span>
+        <table>
+            <tr>
+                <th>所在地</th>
+                <td>愛知県名古屋市中村区名駅1丁目1番3号 <br/>JRゲートタワー41階</td>
+            </tr>
+            <tr>
+                <th>TEL</th>
+                <td>052-533-5327(代表)</td>
+            </tr>
+            <tr>
+                <th>FAX</th>
+                <td>052-533-5328</td>
+            </tr>
+            <tr>
+                <th>アクセス</th>
+                <td>JR名古屋駅直結</td>
+            </tr>
+
+        </table>
+    </div>
+    <div class="info">
+        <span>九州支店</span>
+        <table>
+            <tr>
+                <th>所在地</th>
+                <td>福岡県福岡市中央区天神2丁目14番8号<br/> 福岡天神センタービル6階</td>
+            </tr>
+            <tr>
+                <th>TEL</th>
+                <td>092-738-5650(代表)</td>
+            </tr>
+            <tr>
+                <th>FAX</th>
+                <td>092-738-5651</td>
+            </tr>
+            <tr>
+                <th>アクセス</th>
+                <td>J地下鉄空港線「天神」駅1番出口直結</td>
+            </tr>
+        </table>
+    </div>
+    <div class="info">
+        <span>東北支店</span>
+        <table>
+            <tr>
+                <th>所在地</th>
+                <td>宮城県仙台市青葉区中央一丁目2番3号<br/> 仙台マークワン11階</td>
+            </tr>
+            <tr>
+                <th>TEL</th>
+                <td>022-399-7068(代表)</td>
+            </tr>
+            <tr>
+                <th>FAX</th>
+                <td>022-399-7069</td>
+            </tr>
+            <tr>
+                <th>アクセス</th>
+                <td>JR仙台駅西口より 徒歩1分</td>
+            </tr>
+        </table>
+    </div>
+    <div class="info border_none">
+        <span>浜松事業所</span>
+        <table>
+            <tr>
+                <th>所在地</th>
+                <td>静岡県浜松市中区板屋町111番地２ <br/>浜松アクトタワー15階</td>
+            </tr>
+            <tr>
+                <th>TEL</th>
+                <td>053-457-7111(代表)</td>
+            </tr>
+            <tr>
+                <th>FAX</th>
+                <td>053-457-7112</td>
+            </tr>
+            <tr>
+                <th>アクセス</th>
+                <td>JR浜松駅北口より 徒歩3分</td>
+            </tr>
+        </table>
+    </div>
+    <div class="info border_none">
+        <span>熊本事業所</span>
+        <table>
+            <tr>
+                <th>所在地</th>
+                <td>熊本県熊本市中央区桜町2丁目17号 <br/>第2甲斐田ビル4階</td>
+            </tr>
+            <tr>
+                <th>TEL</th>
+                <td>096-312-1330(代表)</td>
+            </tr>
+            <tr>
+                <th>FAX</th>
+                <td>096-312-1339</td>
+            </tr>
+            <tr>
+                <th>アクセス</th>
+                <td>JR熊本駅より 車6分 熊本市電慶徳校前駅より <br/>徒歩7分</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="clearfix"></div>
+
+<div class="profile_info">
+    <p class="title">海外拠点</p>
+    <div class="info">
+        <span>シンガポール支店</span>
+        <table>
+            <tr>
+                <th>所在地</th>
+                <td>78 Shenton Way <br/>#20-01 Singapore 079120</td>
+            </tr>
+            <tr>
+                <th>TEL/FAX </th>
+                <td>+65-6221-7727</td>
+            </tr>
+        </table>
+    </div>
+    <div class="info">
+        <span>バンコク駐在員事務所</span>
+        <table>
+            <tr>
+                <th>所在地</th>
+                <td>689 Bhiraj Tower at EmQuartier, Level 35, <br/>Unit 3502 Sukhumvit R</td>
+            </tr>
+            <tr>
+                <th>TEL/FAX </th>
+                <td>+66-2-261-3395 (3396,3397)</td>
+            </tr>
+            <tr>
+                <th>アクセス </th>
+                <td>BTSプロンポン(Phrom Phong)駅直結</td>
+            </tr>
+        </table>
+    </div>
+    <div class="info border_none">
+        <span>上海現地法人 山田商務諮詢（上海）<br/>有限公司</span>
+        <table>
+            <tr>
+                <th>所在地</th>
+                <td>上海市浦東新区陸家嘴環路1000号<br/> 恒生銀行大厦 14楼1442室</td>
+            </tr>
+            <tr>
+                <th>TEL/FAX </th>
+                <td>+86-21-58660573</td>
+            </tr>
+            <tr>
+                <th>アクセス </th>
+                <td>+86-21-58660278</td>
+            </tr>
+        </table>
+    </div>
+    <div class="info border_none">
+        <span class="fs_small">スパイア リサーチ アンド コンサルティング インドネシアオフィス内ジャパンデスク</span>
+        <table>
+            <tr>
+                <th>所在地</th>
+                <td>Wisma 46 Kota BNI, 25th Floor Unit 08 – 10, <br/>Jalan Jendral Sudir</td>
+            </tr>
+            <tr>
+                <th>TEL </th>
+                <td>(62 21) 5794 5800</td>
+            </tr>
+            <tr>
+                <th>FAX</th>
+                <td>(62 21) 5794 5800</td>
+            </tr>
+        </table>
+    </div>
+</div>
+                
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+				</div>
+				<!-- /content -->
+				<footer>
+					<div class="l_footer">
+    <section class="information">
+        <div class="container">
+            <div class="section_inner">
+                <p class="info">Infomation</p>
+                <p class="content_top">お問い合わせはこちらから </p>
+                <p class="content_mid">ご相談・お問い合わせはお気軽に</p>
+                <div class="phone_pc pc">
+                    <p class="phone">03-6212-2512</p>
+                    <p class="small">受付時間　平日9:00～18:00 (土日祝除く) </p>
+                </div>
+                <div class="phone_mb mb">
+                    <img src="assets/img/phone_ft_mb.png" width="560" height="110">
+                </div>
+                <div class="line">
+                    <div class="h_write pc" >
+                        <img src="assets/img/icon_write.png" height="30" width="30" alt="">
+                        Webからのお問い合わせはこちら <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </div>
+                    <div class="h_write mb">
+                        <img src="assets/img/write_mb.png" width="560" height="80">
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </section>
+    <div class="clearfix"></div>
+   <section id="menu_ft">
+       <div class="container">
+           <div class="row">
+               <div class="col">
+                    <ul>
+                        <li><a href=#>Home</a></li>
+                        <li><a href=#>お知らせ</a></li>
+                        <li><a href=#>サービス紹介
+                            <ul>
+                                <li><a href=#>組織コンサルティングサービス</a></li>
+                                <li><a href=#>人事コンサルティングサービス</a></li>
+                                <li><a href=#>労務コンサルティングサービス</a></li>
+                                <li><a href=#>役員報酬設計コンサルティングサービス</a></li>
+                            </ul>
+                        </a></li>
+                    </ul>
+               </div>
+               <div class="col">
+                    <ul>
+                        <li><a href=#>実績・事例
+                            <ul>
+                                <li><a href=#>組織コンサルティング事例</a></li>
+                                <li><a href=#>人事コンサルティング事例</a></li>
+                                <li><a href=#>労務コンサルティング事例</a></li>
+                                <li><a href=#>役員報酬設計コンサルティング事例</a></li>
+                            </ul>
+                        </a></li>
+                        <li><a href=#>組織・人事コンサルティングの特徴</a></li>
+                        <li><a href=#>注目のテーマ</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li><a href=#>資料ダウンロード</a></li>
+                        <li><a href=#>会社概要
+                            <ul>
+                                <li><a href=#>コンサルタント紹介</a></li>
+                                <li><a href=#>社内の取り組み</a></li>
+                            </ul>
+                        </a></li>
+                        <li><a href=#>経験者採用</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li><a href=#>お問い合わせ</a></li>
+                        <li><a href=#>よくいただくご質問</a></li>
+                        <li><a href=#>プライバシーポリシー</a></li>
+                    </ul>
+                </div>
+           </div>
+       </div>
+   </section>
+   <section id="menu_fb_mb">
+       <ul>
+           <li><a href="#">HOME</a></li>
+           <li><a href="#">経験者採用</a></li>
+           <li><a href="#">よくいただくご質問</a></li>
+           <li><a href="#">プライバシーポリシー</a></li>
+       </ul>
+   </section>
+   <section id="copy_right">
+       <div class="container">
+            <img src="assets/img/logo_footer.png" width="100" height="75" alt="">
+            <p>copyright © YAMADA Business Consulting Co.,Ltd. All rights rese</p>
+        </div>
+   </section>
+</div>
+				</footer>
+		</div>
+		<script src="assets/lib/js/jquery-3.2.1.min.js"></script>
+		<script src="assets/js/common.js"></script>
+	</body>
+</html>

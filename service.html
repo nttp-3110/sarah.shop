@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title></title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="assets/css/common.css" rel="stylesheet">
+<link href="assets/css/index.css" rel="stylesheet">
+</head>
+	<body>
+		
+		<button onclick="topFunctionMB()" class="btnBack" title="Go to top" id="btt_mb"><img src="assets/img/icon_backToTop_mb.png"/></button>
+		<button onclick="topFunctionPC()" class="btnBack" title="Go to top" id="btt_pc"><img src="assets/img/icon_backToTop_PC.png"/></button>
+		<div class="container-fluid">
+				<!-- header -->
+				<header>
+					<div class="l_header">
+    <div class="container">
+        <div class="h_top">
+            <div class="row">
+                <div class="col text_left">
+                    <span id="fs">テキストが入ります。テキストが入ります。</span>
+                </div>
+                <div class="col text_right">
+                    <ul>
+                        <li>経験者採用</li>
+                        <li>会社概要</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <div class="container">
+        <div class="h_mid">
+            <div class="row">
+                <div class="h_logo">
+                    <img src="assets/img/logo.png" width="445" height="70" alt="" id="logo_pc" class="mb pc">
+                    <img src="assets/img/logo-res.jpg" width="500" height="95" alt="" id="logo_mb" class="mb pc">        
+                   
+                </div>
+                <div class="h_info">
+                    <img src="assets/img/info.png" width="415" height="50" alt="" class="pc">
+                    <div class="h_write">
+    <img src="assets/img/icon_write.png" height="30" width="30" alt="">
+    Webからのお問い合わせ <i class="fa fa-angle-right" aria-hidden="true"></i>
+</div>
+                    <button  onclick="dropdownMenu()" id="btndropdown" class="btndropdown mb">
+                        <img src="assets/img/btndropdown.png" width="95" height="95" alt="">
+                        <!-- ☰ -->
+                    </button>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+
+				</header>
+				<div class="clearfix"></div>
+				<!-- /header -->
+				<!-- content -->
+				<div id="c-content">
+					
+<div class="l_nav">
+   
+    <nav>
+        <ul class="dropdown_content" id="menuDropdown">
+            <div class="container">
+                <li><a href="index.html" >HOME</a></li>
+                <li><a href="service.html">サービス紹介 </a></li>
+                <li><a href="index.html" >実績・事例紹介 </a></li>
+                <li><a href="character.html">組織・人事コンサルティングの特徴 </a></li>
+                <li><a href="consult.html">注目のテーマ</a></li>
+                <li><a href="profile.html">資料ダウンロード</a></li>
+            </div>
+        </ul>
+    </nav>
+    <div class="bg_nav">
+        <img src="assets/img/banner_service.jpg" width="1920" height="220" alt="" id="img_pc">
+        <img src="assets/img/banner_service_mb.jpg" width="640" height="238" alt="" id="img_mobile">
+    </div>
+</div>
+<div class="clearfix"></div>
+<div class="l_content">
+    <div id="page">
+        <div class="l_beadcrumb">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb_item"><a onclick="loadPageWorksHome()">HOME </a></li>
+                    <li class="breadcrumb_item active"><a onclick="loadPageWorksHome()">サービス紹介  </a></li>
+                </ol>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="p_content_02">
+            <div class="container">
+                <div class="wrapper">
+                    <p class="txt_head">組織・人事コンサルティングの4つのサービスについてご紹介いたします。</p>
+                    <div class="service">
+    <div class="s_icon">
+        <img src="assets/img/icon_s_01.png"  width="100" height="100" alt="">
+    </div>
+    <div class="s_content">
+        <div class="text__head">
+            <div class="s_icon">
+                <img src="assets/img/icon_s_mb_01.png"  width="80" height="80" alt="">
+            </div>
+            <div class="s_title">
+                <span> 組織コンサルティング</span>
+                <i class="fa fa-angle-right" aria-hidden="true"></i> 
+            </div>
+        </div>
+        <div class="s_text">
+            「組織の再設計～業務のリストラクチャリング～各メンバーのスキル開発」の一連のサービスを通して、組織の持つ力を最大限発揮できる環境づくりをします
+        </div>
+        <div class="s_end">
+            <ul>
+                <li> <a href="#">組織コンサルティング</a></li>
+                <li><a href="#">BPR・業務環境改善</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="service">
+    <div class="s_icon">
+        <img src="assets/img/icon_s_02.png"  width="100" height="100" alt="">
+    </div>
+    <div class="s_content">
+        <div class="text__head">
+            <div class="s_icon">
+                <img src="assets/img/icon_s_mb_02.png"  width="80" height="80" alt="">
+            </div>
+            <div class="s_title">
+                <span>人事コンサルティング</span>
+                <i class="fa fa-angle-right" aria-hidden="true"></i> 
+            </div>
+        </div>
+        <div class="s_text">
+                人事制度の構築～運用～定着まで総合的に支援することで、マネジメント改善や企業風土の改革を実現します
+        </div>
+        <div class="s_end">
+            <ul>
+                <li> <a href="#">人事制度再構築</a></li>
+                <li> <a href="#">教育・研修</a></li>
+                <li> <a href="#">後継者・次世代幹部育成</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="service">
+    <div class="s_icon">
+        <img src="assets/img/icon_s_03.png"  width="100" height="100" alt="">
+    </div>
+    <div class="s_content">
+        <div class="text__head">
+            <div class="s_icon">
+                <img src="assets/img/icon_s_mb_03.png"  width="80" height="80" alt="">
+            </div>
+            <div class="s_title">
+                <span> 人事コンサルティング　 </span>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="s_text">
+                人事領域における「守り」を確固たるものするための支援をいたします
+        </div>
+        <div class="s_end">
+            <ul>　　　　　　
+                <li> <a href="#">労務デューデリジェンス</a></li>
+                <li> <a href="#">労務相談</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="service">
+    <div class="s_icon">
+        <img src="assets/img/icon_s_04.png"  width="100" height="100" alt="">
+    </div>
+    <div class="s_content">
+        <div class="text__head">
+            <div class="s_icon">
+                <img src="assets/img/icon_s_mb_04.png"  width="80" height="80" alt="">
+            </div>
+            <div class="s_title">
+                <span> 役員報酬設計 コンサルティング </span><i class="fa fa-angle-right icon_mb" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="s_text">
+                事業戦略推進に貢献する役員報酬を設計します。また、ストックオプションや株式報酬導入において豊富な実績を有しており、最適なスキームをご提案します。
+        </div>
+        <div class="s_end">
+            <ul>　　　　　　　　
+                <li> <a href="#">役員報酬設</a></li>
+                <li> <a href="#">株式報酬・ストックオプション導入</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+                    <div class="box_bottom">
+                        <p>実績・事例を見る <i class="fa fa-angle-right" aria-hidden="true"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+				</div>
+				<!-- /content -->
+				<footer>
+					<div class="l_footer">
+    <section class="information">
+        <div class="container">
+            <div class="section_inner">
+                <p class="info">Infomation</p>
+                <p class="content_top">お問い合わせはこちらから </p>
+                <p class="content_mid">ご相談・お問い合わせはお気軽に</p>
+                <div class="phone_pc pc">
+                    <p class="phone">03-6212-2512</p>
+                    <p class="small">受付時間　平日9:00～18:00 (土日祝除く) </p>
+                </div>
+                <div class="phone_mb mb">
+                    <img src="assets/img/phone_ft_mb.png" width="560" height="110">
+                </div>
+                <div class="line">
+                    <div class="h_write pc" >
+                        <img src="assets/img/icon_write.png" height="30" width="30" alt="">
+                        Webからのお問い合わせはこちら <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </div>
+                    <div class="h_write mb">
+                        <img src="assets/img/write_mb.png" width="560" height="80">
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </section>
+    <div class="clearfix"></div>
+   <section id="menu_ft">
+       <div class="container">
+           <div class="row">
+               <div class="col">
+                    <ul>
+                        <li><a href=#>Home</a></li>
+                        <li><a href=#>お知らせ</a></li>
+                        <li><a href=#>サービス紹介
+                            <ul>
+                                <li><a href=#>組織コンサルティングサービス</a></li>
+                                <li><a href=#>人事コンサルティングサービス</a></li>
+                                <li><a href=#>労務コンサルティングサービス</a></li>
+                                <li><a href=#>役員報酬設計コンサルティングサービス</a></li>
+                            </ul>
+                        </a></li>
+                    </ul>
+               </div>
+               <div class="col">
+                    <ul>
+                        <li><a href=#>実績・事例
+                            <ul>
+                                <li><a href=#>組織コンサルティング事例</a></li>
+                                <li><a href=#>人事コンサルティング事例</a></li>
+                                <li><a href=#>労務コンサルティング事例</a></li>
+                                <li><a href=#>役員報酬設計コンサルティング事例</a></li>
+                            </ul>
+                        </a></li>
+                        <li><a href=#>組織・人事コンサルティングの特徴</a></li>
+                        <li><a href=#>注目のテーマ</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li><a href=#>資料ダウンロード</a></li>
+                        <li><a href=#>会社概要
+                            <ul>
+                                <li><a href=#>コンサルタント紹介</a></li>
+                                <li><a href=#>社内の取り組み</a></li>
+                            </ul>
+                        </a></li>
+                        <li><a href=#>経験者採用</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li><a href=#>お問い合わせ</a></li>
+                        <li><a href=#>よくいただくご質問</a></li>
+                        <li><a href=#>プライバシーポリシー</a></li>
+                    </ul>
+                </div>
+           </div>
+       </div>
+   </section>
+   <section id="menu_fb_mb">
+       <ul>
+           <li><a href="#">HOME</a></li>
+           <li><a href="#">経験者採用</a></li>
+           <li><a href="#">よくいただくご質問</a></li>
+           <li><a href="#">プライバシーポリシー</a></li>
+       </ul>
+   </section>
+   <section id="copy_right">
+       <div class="container">
+            <img src="assets/img/logo_footer.png" width="100" height="75" alt="">
+            <p>copyright © YAMADA Business Consulting Co.,Ltd. All rights rese</p>
+        </div>
+   </section>
+</div>
+				</footer>
+		</div>
+		<script src="assets/lib/js/jquery-3.2.1.min.js"></script>
+		<script src="assets/js/common.js"></script>
+	</body>
+</html>
