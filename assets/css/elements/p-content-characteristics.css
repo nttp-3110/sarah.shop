@@ -1,0 +1,12 @@
+div.l-characteristics div.container div.main-content-characteristics div.box-info-characteristics {
+  float: left;
+  width: 572px;
+}
+
+div.l-characteristics div.container div.main-content-characteristics div.img-characteristics {
+  float: left;
+}
+
+div.l-characteristics div.container div.main-content-characteristics div.img-characteristics img.mobile {
+  display: none;
+}
