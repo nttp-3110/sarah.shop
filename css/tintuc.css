@@ -1,0 +1,40 @@
+.tintuc .row{
+	margin-left: 0;
+	margin-right: 0
+}
+.content-news img{
+	margin-left: -15px;
+	    border: 1px solid #eee;
+}
+.content-news p{
+	margin-left: -30px;
+	margin-right: -20px;
+	text-align: justify
+}
+.content-news a{
+	color: #a4a4a4;
+	text-decoration: none
+}
+.content-news a:hover{
+	color: red;
+}
+.xemnhieu{
+	margin-top: -6px
+}
+.xemnhieu h3{
+	text-align: center;
+	border-bottom: 1px solid #ccc
+}
+.sp img{
+	border: 1px solid #eee;
+	padding: 4px;
+}
+.sp a{
+	text-decoration: none;
+	font-weight: bold;
+	text-align: justify;
+	color: #ccc
+}
+.sp a:hover{
+	color: red
+}

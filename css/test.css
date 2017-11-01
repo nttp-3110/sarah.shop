@@ -1,0 +1,222 @@
+*, body, html {
+    padding: 0;
+}
+*, ol, ul {
+    margin: 0;
+}
+#index .header-container {
+    margin-bottom: 0;
+}
+.header-container {
+    margin-bottom: 20px;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+.header-container .header-top {
+    z-index: 1001 !important;
+}
+@media (min-width: 980px)
+.header-container .header-top {
+    height: 65px;
+}
+@media (min-width: 980px)
+.header-container .header-top {
+    background: #000 !important;
+}
+.header-container .header-top {
+    background: #333;
+    height: 80px;
+}
+@media (min-width: 980px)
+.header-container #header_logo .logo {
+    min-height: 69px;
+    padding: 15px;
+}
+.header-container #header_logo .logo {
+    display: block;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0,0,0,.5);
+    padding: 15px;
+    min-height: 100px;
+    min-width: 170px;
+    position: absolute;
+    z-index: 2;
+}
+a, a:active, a:focus, a:link, a:visited {
+    cursor: pointer;
+    text-decoration: none;
+    color: #777;
+    outline: 0;
+}
+.jumbotron .container, img {
+    max-width: 100%;
+}
+img {
+    border: 0;
+    vertical-align: middle;
+}
+#block_top_menu .cat-title, #header .cart_block .price, #header .cart_block a, #header_links li a, #submitComment, .commentList .name, .item-title, .layered_filter, .moreinfo_block .tab-info, .price, .sf-menu>li>a, .shopnow, .title_block, button.detail, h1, h2, h3, h4, h5 {
+    font-family: 'Open Sans',sans-serif!important;
+}
+.cat-title {
+    display: none;
+}
+.fa {
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+.fa, .fa-stack {
+    display: inline-block;
+}
+.sf-menu {
+    padding: 0;
+    float: right;
+}
+.sf-menu, .sf-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.alert ol li, .list_header, ol, table#cart_summary tr ul, ul {
+    list-style: none;
+}
+*, ol, ul {
+    margin: 0;
+}
+ol, ul {
+    margin-bottom: 10px;
+}
+dl, ol, ul {
+    margin-top: 0;
+}
+
+.sf-menu>li {
+    float: left;
+    margin-right: 1px;
+}
+.sf-menu, .sf-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+@media (min-width: 980px)
+  .sf-menu > li > a {
+      padding-top: 12px;
+      padding-bottom: 13px;
+  }
+@media (min-width: 980px)
+.sf-menu > li > a .fa {
+    bottom: 5px;
+}
+.sf-menu>li>a .fa {
+    text-align: center;
+    bottom: 15px;
+    left: 50%;
+    margin-left: -3px;
+    font-size: 14px;
+}
+.sf-menu>li>a .fa, .sf-menu>li>a:before {
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+.sf-menu, .sf-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.sf-menu .submenu-container {
+    border-color: transparent #bd0103 #bd0103;
+}
+.sf-menu>li>ul {
+    padding: 20px;
+    width: 100%;
+    border-width: 0 1px 5px;
+    border-style: solid;
+}
+.sf-menu li ul {
+    display: none;
+    left: 0;
+    top: 100%;
+    z-index: 99;
+    padding: 0 0 18px;
+}
+.sf-menu ul {
+    position: absolute;
+    top: -999em;
+    background: #fff;
+}
+.sf-menu, .sf-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.sf-menu>li>ul>li {
+    float: left;
+    width: 25%;
+    padding-right: 15px;
+}
+.sf-menu ul li {
+    width: 100%;
+}
+.sf-menu, .sf-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a, a:active, a:focus, a:link, a:visited {
+    cursor: pointer;
+    text-decoration: none;
+    color: #777;
+    outline: 0;
+}
+.sf-menu, .sf-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    background: 0 0;
+}
+.sf-menu>li>ul>li .fa {
+    display: none;
+}
+.sf-menu, .sf-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.fa {
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+.sf-menu>li>a:before {
+    top: 0;
+    left: 0;
+    content: "";
+    height: 3px;
+    background: #eee;
+    width: 30%;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: width .3s ease-in 0s;
+    transition: width .3s ease-in 0s;
+}
+.sf-menu>li>a .fa, .sf-menu>li>a:before {
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+*, :after, :before, input[type=search] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}

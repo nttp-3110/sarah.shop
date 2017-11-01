@@ -6,6 +6,7 @@
 	<title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- bootstrap -->
+    <!-- content -->
 	<link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/font-awesome.css">
 
@@ -19,18 +20,19 @@
 	<link href="css/hover.css" rel="stylesheet">
         <!-- Pushy sub menu CSS -->
     <link rel="stylesheet" href="css/pushy.css">
-    <!-- <link rel='stylesheet prefetch' href='css/yxqdlj.css'> -->
-
    
    	<!-- index -->
    	<!-- carousel product -->
     <link rel="stylesheet" type="text/css" href="css/initcarousel-0.css">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/jquery_popup.css">
+	<link href="css/allproduct.css" rel="stylesheet">
+	<link href="css/menu_vertical_product/menu_vertical.css" rel="stylesheet">
+	<link href="css/product.css" rel="stylesheet">
+	
 	<link rel="stylesheet" href="css/responsive.css">
 <body id="index" class="index hide-left-column" cz-shortcut-listen="true">
 	<div id="page">
-		<div>
 		<div class="header-container">
 			<header id="header">
 				<div class="header-block">
@@ -75,6 +77,7 @@
 						</div>
 			       	</div>
 		        </div>
+	            <div class="clear"></div>
 				<div class="header-top">
 					<div class="container">
 						<div class="col-md-2">
@@ -283,63 +286,282 @@
 			</form>
 
 		</div>
-		</div>
-		<div class="content">	
+
+		<div class="content">
 			<div class="container">
-				<!-- slider -->
-				<div id="carousel-id" class="carousel slide" data-ride="carousel">
-					<ol class="carousel-indicators">
-						<li data-target="#carousel-id" data-slide-to="0" class=""></li>
-						<li data-target="#carousel-id" data-slide-to="1" class=""></li>
-						<li data-target="#carousel-id" data-slide-to="2" class="active"></li>
-					</ol>
-					<div class="carousel-inner">
-						<div class="item">
-							<img src="images/slider-1.jpg" width="100%">
-						</div>
-						<div class="item">
-							<img src="images/slider-2.jpg" width="100%">
-						</div>
-						<div class="item active">
-							<img src="images/slider-3.jpg" width="100%">
-						</div>
+				<div class="top-bar">
+					<div class="breadcrumbs">
+						<ul>
+							<li class="home">
+								<a href="index.html" title="Đến trang chủ">
+									<span itemprop="title">Home</span>
+								</a>
+								<div style="clear:both;"></div>
+							</li>
+							<li class="category17 icon-li">
+								<strong>Thời Trang Nữ</strong>
+							</li>
+							<li class="category17 icon-li">
+								<strong>Áo nữ</strong>
+							</li>
+							<li style="float: right; max-height:22px; overflow:hidden;">
+								<div class="share">
+									<div class="facebook">
+										<div class="fb-like fb_iframe_widget" data-send="true" data-layout="button_count" data-width="100" data-show-faces="false" data-href="http://zanado.com/thoi-trang-nu-17.html" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=214940878707177&amp;container_width=0&amp;href=http%3A%2F%2Fzanado.com%2Fthoi-trang-nu-17.html&amp;layout=button_count&amp;locale=vi_VN&amp;sdk=joey&amp;send=true&amp;show_faces=false&amp;width=100"><span style="vertical-align: bottom; width: 148px; height: 20px;"><iframe name="f26ca122aa616b" width="100px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="https://www.facebook.com/plugins/like.php?app_id=214940878707177&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2F0eWevUAMuoH.js%3Fversion%3D42%23cb%3Df63d6bafe79158%26domain%3Dzanado.com%26origin%3Dhttp%253A%252F%252Fzanado.com%252Ff2bce54db811224%26relation%3Dparent.parent&amp;container_width=0&amp;href=http%3A%2F%2Fzanado.com%2Fthoi-trang-nu-17.html&amp;layout=button_count&amp;locale=vi_VN&amp;sdk=joey&amp;send=true&amp;show_faces=false&amp;width=100" style="border: none; visibility: visible; width: 148px; height: 20px;" class=""></iframe></span></div>
+									</div>
+									<div class="google">
+										<g:plusone size="medium"></g:plusone>            
+									</div>
+								</div>
+							</li>
+						</ul>
 					</div>
-					<a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="flex-prev">Previous</span></a>
-					<a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="flex-next">Next</span></a>
 				</div>
-				<!-- banner-qc -->
-				<div class="banner-qc">
+				<div class="main-content">
 					<div class="row">
-						<div class="col-md-9 bn-1">
-							<a href="#"><img src="images/banner-qc-1.jpg" alt="" width="100%"></a>
+						<div class="col-md-3">
+							<div class="menu-vertical">
+								<div id="accordian">
+									<ul>
+										<li>
+											<h3>Quần áo nữ <span class="caret"></span></h3>
+											<ul>
+												<li><a href="#"><i class="fa fa-check" aria-hidden="true"></i> Quần nữ</a></li>
+												<li><a href="#"><i class="fa fa-check" aria-hidden="true"></i> Áo nữ</a></li>
+												<li><a href="#"><i class="fa fa-check" aria-hidden="true"></i> Đồ bộ ngủ</a></li>
+												<li><a href="#"><i class="fa fa-check" aria-hidden="true"></i> Tran sức nữ</a></li>
+											</ul>
+										</li>
+										<!-- we will keep this LI open by default -->
+										<li class="active">
+											<h3>Váy đầm nữ <span class="caret"></span></h3>
+											<ul>
+												<li><a href="#">Váy</a></li>
+												<li><a href="#">Đầm</a></li>
+											</ul>
+										</li>
+										<li>
+											<h3>Đồng hồ nữ <span class="caret"></span></h3>
+											<ul>
+												<li><a href="#"> Đồng hồ kim nữ</a></li>
+												<li><a href="#">Đồng hồ điện tử nữ</a></li>
+											</ul>
+										</li>
+										<li>
+											<h3>Giày dép nữ <span class="caret"></span></h3>
+											<ul>
+												<li><a href="#">Giày nữ</a></li>
+												<li><a href="#">Dép nữ</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="filters">
+								<div class="title">Lọc theo</div>
+								<div style="clear:both"></div>
+								<div class="categorymenu-block menuattribute-block">
+                        			<div class="title">▼ Loại sản phẩm</div>
+                        			<div class="catamenu-content">
+										<ul id="fct-gender-search-ul">
+											<li><a rel="nofollow" href="#" non="nam">Nam</a></li><li><a rel="nofollow" href="#" non="nu">Nữ</a></li><li><a rel="nofollow" href="#" non="thuong hieu">Phụ kiện</a></li>
+										</ul>
+                        			</div>
+                   				</div>
+                   				<div class="categorymenu-block menuattribute-block">
+                        			<div class="title">▼ Thương hiệu</div>
+                        			<div class="box">
+								    	<input type="text" placeholder="Tìm Thương hiệu..." class=" i-search" aria-autocomplete="list" aria-haspopup="true" id="fct-brand-search">
+								    </div>
+                        			<div class="catamenu-content">
+										<ul id="fct-gender-search-ul">
+											<li><a rel="nofollow" href="#" non="nam">Foci</a></li><li><a rel="nofollow" href="#" non="nu">Hera model</a></li><li><a rel="nofollow" href="#" non="thuong hieu">Paradise</a></li>
+											<li><a rel="nofollow" href="#" non="nam">Foci</a></li><li><a rel="nofollow" href="#" non="nu">Hera model</a></li><li><a rel="nofollow" href="#" non="thuong hieu">Paradise</a></li>
+											<li><a rel="nofollow" href="#" non="nam">Foci</a></li><li><a rel="nofollow" href="#" non="nu">Hera model</a></li><li><a rel="nofollow" href="#" non="thuong hieu">Paradise</a></li>
+										</ul>
+                        			</div>
+                   				</div>
+                   				<div class="categorymenu-block menuattribute-block">
+                        			<div class="title">▼ Màu sắc</div>
+                        			<div class="box">
+								    	<input type="text" placeholder="Tìm Thương hiệu..." class=" i-search" aria-autocomplete="list" aria-haspopup="true" id="fct-brand-search">
+								    </div>
+                        			<div class="catamenu-content">
+										<ul id="fct-gender-search-ul">
+											<li><a rel="nofollow" href="#" non="nam">Xanh</a></li><li><a rel="nofollow" href="#" non="nu">Đỏ</a></li><li><a rel="nofollow" href="#" non="thuong hieu">Tím </a></li>
+											<li><a rel="nofollow" href="#" non="nam">Vàng</a></li><li><a rel="nofollow" href="#" non="nu">Cam</a></li>
+										</ul>
+                        			</div>
+                   				</div>	
+                   				<div class="categorymenu-block menuattribute-block">
+                        			<div class="title">▼ Giá sản phẩm</div>
+                        			<div class="catamenu-content">
+										<ul id="fct-gender-search-ul">
+											<li><a rel="nofollow" href="#" non="nam"><500.000 vnd</a></li><li><a rel="nofollow" href="#" non="nu">>500.000 vnd</a></li>
+										</ul>
+                        			</div>
+                   				</div>
+                   			</div>		
 						</div>
-						<div class="col-md-3 bn-2">
-							<a href="#"><img src="images/banner-qc-2.gif" alt="" width="100%"></a>
+						<div class="col-md-9">
+							<div class="product">
+								<div class="row">
+									<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+										<div class="thumbnail">
+											<a href="#"><img src="images/sp-1.jpg" alt=""></a>
+											<a href="#"><img src="images/sp-1-3.jpg" alt="" class="overlay"></a>
+											<div class="clear"></div>
+											<div class="caption">
+												<a href="#"><h3 class="product-name">Bộ áo choàng kèm đầm ngủ Lai gợn sóng</h3></a>
+												<p class="infoprice">
+													<span class="price-old">260.000 ₫</span>
+													<span class="price-new">165.000 ₫</span>
+												</p>
+												<div class="discountpercent">
+													37%
+												</div>
+												<p class="buybtn">
+													<a href="#" class="btn">Mua</a>
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+										<div class="thumbnail">
+											<a href="#"><img src="images/sp-1.jpg" alt=""></a>
+											<a href="#"><img src="images/sp-1-3.jpg" alt="" class="overlay"></a>
+											<div class="clear"></div>
+											<div class="caption">
+												<a href="#"><h3 class="product-name">Bộ áo choàng kèm đầm ngủ Lai gợn sóng</h3></a>
+												<p class="infoprice">
+													<span class="price-old">260.000 ₫</span>
+													<span class="price-new">165.000 ₫</span>
+												</p>
+												<div class="discountpercent">
+													37%
+												</div>
+												<p class="buybtn">
+													<a href="#" class="btn">Mua</a>
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+										<div class="thumbnail">
+											<a href="#"><img src="images/sp-1.jpg" alt=""></a>
+											<a href="#"><img src="images/sp-1-3.jpg" alt="" class="overlay"></a>
+											<div class="clear"></div>
+											<div class="caption">
+												<a href="#"><h3 class="product-name">Bộ áo choàng kèm đầm ngủ Lai gợn sóng</h3></a>
+												<p class="infoprice">
+													<span class="price-old">260.000 ₫</span>
+													<span class="price-new">165.000 ₫</span>
+												</p>
+												<div class="discountpercent">
+													37%
+												</div>
+												<p class="buybtn">
+													<a href="#" class="btn">Mua</a>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+										<div class="thumbnail">
+											<a href="#"><img src="images/sp-1.jpg" alt=""></a>
+											<a href="#"><img src="images/sp-1-3.jpg" alt="" class="overlay"></a>
+											<div class="clear"></div>
+											<div class="caption">
+												<a href="#"><h3 class="product-name">Bộ áo choàng kèm đầm ngủ Lai gợn sóng</h3></a>
+												<p class="infoprice">
+													<span class="price-old">260.000 ₫</span>
+													<span class="price-new">165.000 ₫</span>
+												</p>
+												<div class="discountpercent">
+													37%
+												</div>
+												<p class="buybtn">
+													<a href="#" class="btn">Mua</a>
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+										<div class="thumbnail">
+											<a href="#"><img src="images/sp-1.jpg" alt=""></a>
+											<a href="#"><img src="images/sp-1-3.jpg" alt="" class="overlay"></a>
+											<div class="clear"></div>
+											<div class="caption">
+												<a href="#"><h3 class="product-name">Bộ áo choàng kèm đầm ngủ Lai gợn sóng</h3></a>
+												<p class="infoprice">
+													<span class="price-old">260.000 ₫</span>
+													<span class="price-new">165.000 ₫</span>
+												</p>
+												<div class="discountpercent">
+													37%
+												</div>
+												<p class="buybtn">
+													<a href="#" class="btn">Mua</a>
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+										<div class="thumbnail">
+											<a href="#"><img src="images/sp-1.jpg" alt=""></a>
+											<a href="#"><img src="images/sp-1-3.jpg" alt="" class="overlay"></a>
+											<div class="clear"></div>
+											<div class="caption">
+												<a href="#"><h3 class="product-name">Bộ áo choàng kèm đầm ngủ Lai gợn sóng</h3></a>
+												<p class="infoprice">
+													<span class="price-old">260.000 ₫</span>
+													<span class="price-new">165.000 ₫</span>
+												</p>
+												<div class="discountpercent">
+													37%
+												</div>
+												<p class="buybtn">
+													<a href="#" class="btn">Mua</a>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="clear"></div>
+								<!-- phantrang -->
+								<div class="phantrang pull-right">
+									<nav aria-label="Page navigation">
+									  	<ul class="pagination">
+									    	<li>
+									      	<a href="#" aria-label="Previous">
+									        <span aria-hidden="true">&laquo;</span>
+									      </a>
+									    	</li>
+										    <li><a href="#">1</a></li>
+										    <li><a href="#">2</a></li>
+										    <li><a href="#">3</a></li>
+										    <li><a href="#">4</a></li>
+										    <li><a href="#">5</a></li>
+										    <li>
+									      	<a href="#" aria-label="Next">
+									        <span aria-hidden="true">&raquo;</span>
+									      </a>
+									    	</li>
+									  	</ul>
+									</nav>
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
-				<!-- product -->
-				<div class="product">
-					<div class="row">
-						<div class="col-md-6">
-							<a href="#"><img src="images/fashion-nu.jpg" alt="" width="100%"></a>
-						</div>
-						<div class="col-md-6">
-							<a href="#"><img src="images/fashion-nam.jpg" alt="" width="100%"></a>
-						</div>
-						<div class="col-md-12 hh">
-							<a href="#"><img src="images/hanghieu.jpg" alt="" width="100%"></a>
-						</div>
-					</div>
-				</div>
-				<div class="line">
-					<h2> <span>GỢI Ý DÀNH CHO BẠN</span></h2>
+					<!-- sp-lienqan -->
+					<div class="sp-lienquan">
+						<div class="line">
+					<h2> <span>SẢN PHẨM LIÊN QUAN</span></h2>
 				</div>
 				<div class="suguest">
 					<div class="row">
-						<div class="col-md-12">
-							<img src="images/goiy.jpg" width="100%" alt="" class="img-gy">
-						</div>
 						<div class="col-md-2 sg-left">
 							<img src="images/valentine-nu.jpg" width="100%" alt="">
 							<img src="images/valentine-nam.jpg" width="100%" alt="">
@@ -472,346 +694,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="line">
-					<h2> <span>THỜI TRANG BÁN CHẠY NHẤT</span></h2>
-				</div>
-				<div id="amazingcarousel-container-0">
-					<div id="amazingcarousel-0" style="display:none;position:relative;width:100%;margin:0px auto 0px;">
-   						<div class="amazingcarousel-list-container">
-        					<ul class="amazingcarousel-list">
-            					<li class="amazingcarousel-item">
-                					<div class="amazingcarousel-item-container">
-										<div class="amazingcarousel-image"><a href="images/sp-1-2.jpg" title="sp-1-3"  class="html5lightbox" data-group="amazingcarousel-0"><img src="images/sp-1-3.jpg"  alt="sp-1-3" /></a>
-											<div style="width: 100%;background: #fff;height: 18px;position: absolute;z-index: 100;bottom: 4px;">
-											</div>
-
-										</div>
-										<div class="amazingcarousel-title">
-											<a href="#"><h3 class="product-name">
-											Áo khoác nữ xỏ ngón</h3></a>
-											<p class="infoprice">
-												<span class="price-old">260.000 ₫</span>
-												<span class="price-new">165.000 ₫</span>
-											</p>
-											<div class="discountpercent">
-												37%
-											</div>
-											<p class="buybtn">
-												<a href="#" class="btn">Mua</a>
-											</p>
-										</div>
-									</div>
-            					</li>
-            					<li class="amazingcarousel-item">
-                					<div class="amazingcarousel-item-container">
-										<div class="amazingcarousel-image"><a href="images/sp-1.jpg" title="sp-1"  class="html5lightbox" data-group="amazingcarousel-0"><img src="images/sp-1.jpg"  alt="sp-1" /></a>
-											<div style="width: 100%;background: #fff;height: 18px;position: absolute;z-index: 100;bottom: 4px;">
-											</div>
-
-										</div>
-										<div class="amazingcarousel-title">
-											<a href="#"><h3 class="product-name">
-											Áo khoác nữ xỏ ngón</h3></a>
-											<p class="infoprice">
-												<span class="price-old">260.000 ₫</span>
-												<span class="price-new">165.000 ₫</span>
-											</p>
-											<div class="discountpercent">
-												37%
-											</div>
-											<p class="buybtn">
-												<a href="#" class="btn">Mua</a>
-											</p>
-										</div>      
-									</div>
-            					</li>
-            					<li class="amazingcarousel-item">
-                					<div class="amazingcarousel-item-container">
-										<div class="amazingcarousel-image">
-											<a href="images/sp-1.jpg" title="sp-1"  class="html5lightbox" data-group="amazingcarousel-0"><img src="images/sp-1.jpg"  alt="sp-1" /></a>
-											<div style="width: 100%;background: #fff;height: 18px;position: absolute;z-index: 100;bottom: 4px;">
-											</div>
-										</div>
-										<div class="amazingcarousel-title">
-											<a href="#"><h3 class="product-name">
-											Áo khoác nữ xỏ ngón</h3></a>
-											<p class="infoprice">
-												<span class="price-old">260.000 ₫</span>
-												<span class="price-new">165.000 ₫</span>
-											</p>
-											<div class="discountpercent">
-												37%
-											</div>
-											<p class="buybtn">
-												<a href="#" class="btn">Mua</a>
-											</p>
-										</div>      
-									</div>
-            					</li>
-				                <li class="amazingcarousel-item">
-				                    <div class="amazingcarousel-item-container">
-										<div class="amazingcarousel-image"><a href="images/sp-1-1.jpg" title="sp-1-1"  class="html5lightbox" data-group="amazingcarousel-0"><img src="images/sp-1-1.jpg"  alt="sp-1-1" /></a>
-											<div style="width: 100%;background: #fff;height: 18px;position: absolute;z-index: 100;bottom: 4px;">
-											</div>
-										</div>
-
-										<div class="amazingcarousel-title">
-											<a href="#"><h3 class="product-name">
-											Áo khoác nữ xỏ ngón</h3></a>
-											<p class="infoprice">
-												<span class="price-old">260.000 ₫</span>
-												<span class="price-new">165.000 ₫</span>
-											</p>
-											<div class="discountpercent">
-												37%
-											</div>
-											<p class="buybtn">
-												<a href="#" class="btn">Mua</a>
-											</p>
-										</div>
-									</div>
-				                </li>
-				                <li class="amazingcarousel-item">
-				                    <div class="amazingcarousel-item-container">
-										<div class="amazingcarousel-image"><a href="images/sp-1-2.jpg" title="sp-1-2"  class="html5lightbox" data-group="amazingcarousel-0"><img src="images/sp-1-2.jpg"  alt="sp-1-2" /></a>
-											<div style="width: 100%;background: #fff;height: 18px;position: absolute;z-index: 100;bottom: 4px;">
-											</div>
-
-										</div>
-										<div class="amazingcarousel-title">
-											<a href="#"><h3 class="product-name">
-											Áo khoác nữ xỏ ngón</h3></a>
-											<p class="infoprice">
-												<span class="price-old">260.000 ₫</span>
-												<span class="price-new">165.000 ₫</span>
-											</p>
-											<div class="discountpercent">
-												37%
-											</div>
-											<p class="buybtn">
-												<a href="#" class="btn">Mua</a>
-											</p>
-										</div>   
-									</div>
-				                </li>
-       						</ul>
-				            <div class="amazingcarousel-prev"></div>
-				            <div class="amazingcarousel-next"></div>
-				        </div>
-				    </div>
-				</div>
-			</div><!-- ./container -->
-			<div class="newsletter">
-				<div class="container-fluid">
-					<div class="container">
-						<h2>ĐĂNG KÝ ĐỂ NHẬN THÔNG TIN KHUYẾN MÃI HOẶC SẢN PHẨM MỚI NHẤT</h2>
-						<p>Thông tin này sẽ được bảo mật trên hệ thống SARAH<br>
-						Hệ thống sẽ tự động gửi thông tin khuyến mãi hoặc sản phẩm mới nhất về thời trang nam về email mà bạn đã đăng ký</p>
-						<div class="form-group">
-							<div class="col-sm-10">
-								<input type="search" name="" id="input" class="form-control" placeholder="Email của bạn" required="required" title="">
-								<button type="submit" class="form-control dk">Đăng kí</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="container">
-				<div class="line">
-					<h2> <span>THƯƠNG HIỆU YÊU THÍCH</span></h2>
-				</div>
-				<div class="brand">
-					<div class="row">
-						<div class="col-md-4 col-sm-4 col-xs-4 col-lg-4">
-							<img src="images/thuonghieu-1.png" width="100%" alt="">
-						</div>
-						<div class="col-md-4 col-sm-4 col-xs-4 col-lg-4">
-							<img src="images/thuonghieu-2.png" width="100%" alt="">
-						</div>
-						<div class="col-md-4 col-sm-4 col-xs-4 col-lg-4">
-							<img src="images/thuonghieu-3.png" width="100%" alt="">
-						</div>
-						<div class="col-md-4 col-sm-4 col-xs-4 col-lg-4">
-							<img src="images/thuonghieu-4.png" width="100%" alt="">
-						</div>
-						<div class="col-md-4 col-sm-4 col-xs-4 col-lg-4">
-							<img src="images/thuonghieu-5.png" width="100%" alt="">
-						</div>
-						<div class="col-md-4 col-sm-4 col-xs-4 col-lg-4">
-							<img src="images/thuonghieu-6.png" width="100%" alt="">
-						</div>
-					</div>
-				</div>
-				<div class="line">
-					<h2> <span>SẢN PHẨM KHUYẾN MÃI</span></h2>
-				</div>
-				<div class="suguest">
-					<div class="row">
-						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-							<div class="thumbnail">
-								<a href="#"><img src="images/sp-1.jpg" alt=""></a>
-								<a href="#"><img src="images/sp-1-3.jpg" alt="" class="overlay"></a>
-								<div class="clear"></div>
-								<div class="caption">
-									<a href="#"><h3 class="product-name">Bộ áo choàng kèm đầm ngủ Lai gợn sóng</h3></a>
-									<p class="infoprice">
-										<span class="price-old">260.000 ₫</span>
-										<span class="price-new">165.000 ₫</span>
-									</p>
-									<div class="discountpercent">
-										37%
-									</div>
-									<p class="buybtn">
-										<a href="#" class="btn">Mua</a>
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-							<div class="thumbnail">
-								<a href="#"><img src="images/sp-1.jpg" alt=""></a>
-								<a href="#"><img src="images/sp-1-3.jpg" alt="" class="overlay"></a>
-								<div class="clear"></div>
-								<div class="caption">
-									<a href="#"><h3 class="product-name">Bộ áo choàng kèm đầm ngủ Lai gợn sóng</h3></a>
-									<p class="infoprice">
-										<span class="price-old">260.000 ₫</span>
-										<span class="price-new">165.000 ₫</span>
-									</p>
-									<div class="discountpercent">
-										37%
-									</div>
-									<p class="buybtn">
-										<a href="#" class="btn">Mua</a>
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-							<div class="thumbnail">
-								<a href="#"><img src="images/sp-1.jpg" alt=""></a>
-								<a href="#"><img src="images/sp-1-3.jpg" alt="" class="overlay"></a>
-								<div class="clear"></div>
-								<div class="caption">
-									<a href="#"><h3 class="product-name">Bộ áo choàng kèm đầm ngủ Lai gợn sóng</h3></a>
-									<p class="infoprice">
-										<span class="price-old">260.000 ₫</span>
-										<span class="price-new">165.000 ₫</span>
-									</p>
-									<div class="discountpercent">
-										37%
-									</div>
-									<p class="buybtn">
-										<a href="#" class="btn">Mua</a>
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-							<div class="thumbnail">
-								<a href="#"><img src="images/sp-1.jpg" alt=""></a>
-								<a href="#"><img src="images/sp-1-3.jpg" alt="" class="overlay"></a>
-								<div class="clear"></div>
-								<div class="caption">
-									<a href="#"><h3 class="product-name">Bộ áo choàng kèm đầm ngủ Lai gợn sóng</h3></a>
-									<p class="infoprice">
-										<span class="price-old">260.000 ₫</span>
-										<span class="price-new">165.000 ₫</span>
-									</p>
-									<div class="discountpercent">
-										37%
-									</div>
-									<p class="buybtn">
-										<a href="#" class="btn">Mua</a>
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-							<div class="thumbnail">
-								<a href="#"><img src="images/sp-1.jpg" alt=""></a>
-								<a href="#"><img src="images/sp-1-3.jpg" alt="" class="overlay"></a>
-								<div class="clear"></div>
-								<div class="caption">
-									<a href="#"><h3 class="product-name">Bộ áo choàng kèm đầm ngủ Lai gợn sóng</h3></a>
-									<p class="infoprice">
-										<span class="price-old">260.000 ₫</span>
-										<span class="price-new">165.000 ₫</span>
-									</p>
-									<div class="discountpercent">
-										37%
-									</div>
-									<p class="buybtn">
-										<a href="#" class="btn">Mua</a>
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-							<div class="thumbnail">
-								<a href="#"><img src="images/sp-1.jpg" alt=""></a>
-								<a href="#"><img src="images/sp-1-3.jpg" alt="" class="overlay"></a>
-								<div class="clear"></div>
-								<div class="caption">
-									<a href="#"><h3 class="product-name">Bộ áo choàng kèm đầm ngủ Lai gợn sóng</h3></a>
-									<p class="infoprice">
-										<span class="price-old">260.000 ₫</span>
-										<span class="price-new">165.000 ₫</span>
-									</p>
-									<div class="discountpercent">
-										37%
-									</div>
-									<p class="buybtn">
-										<a href="#" class="btn">Mua</a>
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-							<div class="thumbnail">
-								<a href="#"><img src="images/sp-1.jpg" alt=""></a>
-								<a href="#"><img src="images/sp-1-3.jpg" alt="" class="overlay"></a>
-								<div class="clear"></div>
-								<div class="caption">
-									<a href="#"><h3 class="product-name">Bộ áo choàng kèm đầm ngủ Lai gợn sóng</h3></a>
-									<p class="infoprice">
-										<span class="price-old">260.000 ₫</span>
-										<span class="price-new">165.000 ₫</span>
-									</p>
-									<div class="discountpercent">
-										37%
-									</div>
-									<p class="buybtn">
-										<a href="#" class="btn">Mua</a>
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-							<div class="thumbnail">
-								<a href="#"><img src="images/sp-1.jpg" alt=""></a>
-								<a href="#"><img src="images/sp-1-3.jpg" alt="" class="overlay"></a>
-								<div class="clear"></div>
-								<div class="caption">
-									<a href="#"><h3 class="product-name">Bộ áo choàng kèm đầm ngủ Lai gợn sóng</h3></a>
-									<p class="infoprice">
-										<span class="price-old">260.000 ₫</span>
-										<span class="price-new">165.000 ₫</span>
-									</p>
-									<div class="discountpercent">
-										37%
-									</div>
-									<p class="buybtn">
-										<a href="#" class="btn">Mua</a>
-									</p>
-								</div>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div><!-- ./container -->
+			<div class="clear"></div>
 		</div><!-- ./content -->
 		<div class="footer">	
 			<div class="container-fluid">
@@ -876,6 +762,7 @@
 		</div>
 	</div><!-- ./page -->
 	<script src="js/jquery-3.1.1.min.js"></script>
+	
     <script src="js/bootstrap.min.js"></script>
     <script src="js/pushy.min.js"></script>
     <script src="js/menu-head.js"></script>
@@ -884,5 +771,6 @@
     <script src="js/amazingcarousel.js"></script>
     <script src="js/initcarousel-0.js"></script>
     <script src="js/jquery_popup.js"></script>
+    <script src="js/menu-vertical.js"></script>
 </body>
 </html>
